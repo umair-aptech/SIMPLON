@@ -1,0 +1,79 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-main:rgb(255,0,155);
+    --color-white: rgb(255, 255, 255);
+    --color-black: rgb(0, 0, 0);
+
+    --logo: Faculty Glyphic;
+    --text: Poppins; 
+}
+header{
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;
+}
+.bg-body-tertiary{
+    background-color: var(--color-black) !important;
+    padding: 0px !important;
+}
+.navbar-brand{
+    font-family: var(--logo);
+    color: var(--color-white) !important;
+    font-size: 26px !important;
+}
+.navbar-brand span{
+    color: var(--color-main);
+}   
+.navbar-brand:hover{
+    color: var(--color-main) !important;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 90% !important;
+}
+.dropdown-menu{
+    background-color: var(--color-black);
+}
+.nav-link , .dropdown-item{
+    color: var(--color-white) !important;
+    font-family: var(--text);
+    font-size: 18px !important;
+}
+.nav-link:hover, .dropdown-item:hover{
+    background-color: var(--color-black);
+    color: var(--color-main) !important;
+}
+#carouselExampleIndicators{
+    padding-top: 56px !important;
+}
+.carousel-indicators button{
+    /* border: 1px solid var(--color-black)important; */
+    transform: skew(-35deg);
+    background-color: var(--color-black)important;
+}
+.carousel-control-next, .carousel-control-prev{
+ width: fit-content;
+ margin: 0px 30px;
+}
+.carousel-indicators{
+    margin-bottom:  8px !important;
+}
+#categories .col{
+    padding: 5px !important;  
+}
+#categories .box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+}
+#categories .box:hover h4{
+    color: var(--color-main);
+}
+
+
+
+
